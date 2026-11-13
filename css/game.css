@@ -1,0 +1,147 @@
+.game-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 24px;
+    border: 2px solid var(--plum);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.game-container h2 {
+    text-align: center;
+    color: var(--plum);
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.ui-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--pink);
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#startBtn { background-color: var(--pink); color: white; }
+#startBtn:hover { background-color: var(--plum); }
+
+#restartBtn { background-color: var(--plum); color: white; display: none; }
+#restartBtn:hover { background-color: var(--pink); }
+
+
+.game-scroll {
+    overflow-x: auto;
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border: 2px solid var(--plum);
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #FBE0EA 80%, #C9B8EE 80%);
+}
+
+#dino {
+    width: 50px;  
+    height: 50px; 
+    background-image: url('../img/dino.gif'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    top: 150px; 
+    left: 50px;
+    z-index: 2;
+}
+
+#cactus {
+    width: 30px;  
+    height: 40px; 
+    background-image: url('../img/cactus.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 120px; 
+    left: 580px;
+    display: none;
+    z-index: 2;
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0%   { top: 150px; }
+    50%  { top: 80px; } 
+    100% { top: 150px; }
+}
+
+@keyframes cactusMov {
+    0% { left: 580px; }
+    100% { left: -30px; }
+}
+
+.cactus-active {
+    display: block !important;
+    animation: cactusMov 2s infinite linear; 
+}
+
+.game-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.game-rules {
+    background: var(--pearl);
+    border-radius: 18px;
+    padding: 22px 26px;
+    max-width: 340px;
+}
+
+.game-rules ol {
+    margin-left: 20px;
+}
+
+.game-rules li {
+    margin-bottom: 8px;
+}
+
+kbd {
+    background: var(--powder);
+    border: 1px solid var(--muted);
+    border-radius: 6px;
+    padding: 1px 7px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+    .game-container {
+        width: 100%;
+        padding: 18px;
+    }
+}

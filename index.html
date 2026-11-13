@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личный блог кошки Изабеллы: мода, фотосессии и кошачья жизнь.">
+    <title>Главная — Блог Изабеллы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">Изабелла</a>
+        <p class="tagline">личный блог одной очень модной кошки</p>
+    </header>
+
+    <nav class="main-nav" aria-label="Основное меню">
+        <ul class="menu">
+            <li><a href="index.html" class="active" aria-current="page">Главная</a></li>
+            <li class="has-sub">
+                <a href="interests.html">Интересы</a>
+                <ul class="submenu">
+                    <li><a href="interests.html#fashion">Мода</a></li>
+                    <li><a href="interests.html#photo">Фотосессии</a></li>
+                    <li><a href="interests.html#food">Гастрономия</a></li>
+                    <li><a href="interests.html#sleep">Сон</a></li>
+                    <li><a href="interests.html#gallery">Фотогалерея</a></li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="recommendations.html">Рекомендации</a>
+                <ul class="submenu">
+                    <li><a href="recommendations.html#films">Фильмы и мультфильмы</a></li>
+                    <li><a href="recommendations.html#books">Книги</a></li>
+                    <li><a href="recommendations.html#sites">Полезные сайты</a></li>
+                </ul>
+            </li>
+            <li><a href="places.html">Места</a></li>
+            <li><a href="favorite.html">Фаворит</a></li>
+            <li><a href="game.html">Игра</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Привет! Я Белла.</h1>
+                <p>Полное имя — Изабелла, но для друзей я просто Белла. Мне 3 года, и я модная дива своего города.</p>
+                <p>Меня часто спрашивают: «Как оставаться такой пушистой и стильной одновременно?». Ответ прост: нужно любить себя, много спать и никогда не выходить из дома без идеально подобранного аксессуара.</p>
+                <p>Этот блог — мой личный дневник. Здесь я делюсь своими образами, рассказываю о любимых местах, советую фильмы и книги и показываю, как превратить обычный день в показ мод.</p>
+                <p class="hero-sign">Мур, ваша Белла</p>
+            </div>
+
+            <!-- Слайдер с фотографиями -->
+            <div class="slider" aria-label="Фотографии Беллы">
+                <div class="slides">
+                    <figure class="slide">
+                        <img src="img/bella-bath.jpg" alt="Образ «Пенная вечеринка»">
+                        <figcaption>Образ «Пенная вечеринка»</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="img/bella-phone.jpg" alt="Разговор с моим агентом">
+                        <figcaption>Разговор с моим агентом</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="img/bella-tiara.jpg" alt="Звёздный выход в тиаре">
+                        <figcaption>Звёздный выход в тиаре</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="img/bella-bows.jpg" alt="Бантики — всегда в моде">
+                        <figcaption>Бантики — всегда в моде</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="img/bella-lashes.jpg" alt="Взгляд через плечо">
+                        <figcaption>Взгляд через плечо</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="img/bella-smile.jpg" alt="Улыбка для обложки">
+                        <figcaption>Улыбка для обложки</figcaption>
+                    </figure>
+                </div>
+                <button class="slider-btn prev" aria-label="Предыдущее фото">‹</button>
+                <button class="slider-btn next" aria-label="Следующее фото">›</button>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Свежие заметки</h2>
+            <!-- Сетка из четырёх карточек (CSS Grid) -->
+            <div class="cards">
+                <article class="card">
+                    <span class="card-tag">Заметка</span>
+                    <h3>Образ недели</h3>
+                    <p>Розовая повязка-бант и пенная ванна. Простое сочетание, а соседские коты до сих пор не могут прийти в себя.</p>
+                </article>
+                <article class="card">
+                    <span class="card-tag">Событие</span>
+                    <h3>Фотосессия в субботу</h3>
+                    <p>Снимаем новый образ с тиарой и розовыми очками. Хозяйка уже купила новую лампу для съёмок.</p>
+                </article>
+                <article class="card">
+                    <span class="card-tag">Факт</span>
+                    <h3>16 часов сна</h3>
+                    <p>Именно столько в сутки спит взрослая кошка. Это не лень, а забота о красоте и здоровье.</p>
+                </article>
+                <article class="card">
+                    <span class="card-tag">Совет</span>
+                    <h3>Скучно? Сыграйте!</h3>
+                    <p>Пока я сплю, хозяйка играет в «Динозаврика». Попробуйте побить её рекорд на <a href="game.html">странице с игрой</a>.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/slider.js"></script>
+</body>
+</html>

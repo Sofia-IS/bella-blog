@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Игра «Динозаврик» в блоге кошки Изабеллы.">
+    <title>Игра — Блог Изабеллы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">Изабелла</a>
+        <p class="tagline">личный блог одной очень модной кошки</p>
+    </header>
+
+    <nav class="main-nav" aria-label="Основное меню">
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li class="has-sub">
+                <a href="interests.html">Интересы</a>
+                <ul class="submenu">
+                    <li><a href="interests.html#fashion">Мода</a></li>
+                    <li><a href="interests.html#photo">Фотосессии</a></li>
+                    <li><a href="interests.html#food">Гастрономия</a></li>
+                    <li><a href="interests.html#sleep">Сон</a></li>
+                    <li><a href="interests.html#gallery">Фотогалерея</a></li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="recommendations.html">Рекомендации</a>
+                <ul class="submenu">
+                    <li><a href="recommendations.html#films">Фильмы и мультфильмы</a></li>
+                    <li><a href="recommendations.html#books">Книги</a></li>
+                    <li><a href="recommendations.html#sites">Полезные сайты</a></li>
+                </ul>
+            </li>
+            <li><a href="places.html">Места</a></li>
+            <li><a href="favorite.html">Фаворит</a></li>
+            <li><a href="game.html" class="active" aria-current="page">Игра</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-intro">
+            <h1>Игровая комната</h1>
+            <p>Пока я сплю свои 16 часов, хозяйка играет в «Динозаврика». Говорит, это помогает ей не будить меня. Попробуйте и вы!</p>
+        </section>
+
+        <section class="game-layout">
+            <!-- Игра из задания 5: разметка и id не изменены -->
+            <div class="game-container">
+                <h2>Динозаврик 🦖</h2>
+
+                <!-- Панель управления -->
+                <div class="ui-panel">
+                    <div class="score">Счёт: <span id="score">0</span></div>
+                    <div class="buttons">
+                        <button id="startBtn">Начать игру</button>
+                        <button id="restartBtn">Начать заново</button>
+                    </div>
+                </div>
+
+                <!-- Игровое поле -->
+                <div class="game-scroll">
+                    <div class="game">
+                        <div id="dino"></div>
+                        <div id="cactus"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Инструкция для игрока -->
+            <aside class="game-rules">
+                <h2>Как играть</h2>
+                <ol>
+                    <li>Нажмите кнопку «Начать игру».</li>
+                    <li>Динозаврик бежит сам, навстречу ему едут кактусы.</li>
+                    <li>Чтобы перепрыгнуть кактус, нажмите <kbd>Пробел</kbd> или <kbd>↑</kbd>.</li>
+                    <li>Пока динозаврик не врезался, счёт растёт.</li>
+                    <li>При столкновении игра закончится и покажет ваш результат.</li>
+                    <li>Чтобы сыграть ещё раз, нажмите «Начать заново».</li>
+                </ol>
+                <p>Игра управляется с клавиатуры, поэтому играть удобнее на компьютере.</p>
+            </aside>
+        </section>
+    </main>
+
+
+    <script src="js/game.js"></script>
+</body>
+</html>
